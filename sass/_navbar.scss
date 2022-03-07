@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+
+    .logo {
+        cursor: pointer;
+        margin-right: auto;
+    }
+
+    .nav-items {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding: 0 50px;
+        }
+    }
+}
