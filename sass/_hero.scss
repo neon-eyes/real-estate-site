@@ -1,0 +1,29 @@
+#hero {
+    img {
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+    }
+
+    .brand-text-container {
+        z-index: 10;
+        position: relative;
+        color: $bright-color;
+        width: 30%;
+        margin: auto;
+
+        .brand-text {
+            h1 {
+                font-size: 80px;
+            }
+
+            p {
+                width: 75%;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+}
