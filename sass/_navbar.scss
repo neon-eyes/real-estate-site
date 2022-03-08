@@ -2,11 +2,14 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 35px 10%;
+    position: relative;
+    z-index: 10;
 
     .logo {
         cursor: pointer;
         margin-right: auto;
+        height: 50px;
     }
 
     .nav-items {
@@ -15,6 +18,56 @@ header {
         li {
             display: inline-block;
             padding: 0 50px;
+            height: 46px;
+            padding-top: 12px;
+
+            &.current {
+                font-size: 1.1rem;
+                border-bottom: 3px solid $primary-color;
+            }
+
+            &:nth-child(4) {
+                margin-right: 10px;
+            }
+
+            &:not(:last-child):hover {
+                border-bottom: 3px solid $primary-color;
+            }
+        }
+
+        // Work with us button
+        li:last-child {
+            background: $primary-color;
+            height: 46px;
+            width: 230px;
+            border-top-right-radius: 18px;
+
+            a {
+                color: $dark-color;
+                font-size: 17px;
+                font-weight: bold;
+                text-align: center;
+                i {
+                    color: $bright-color;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                background: darken($primary-color, 5%);
+                @include transition-ease;
+
+                a {
+                    color: $bright-color;
+                    @include transition-ease;
+
+                    i {
+                        color: lighten($dark-color, 2%);
+                        @include transition-ease;
+                    }
+                }
+            }
         }
     }
 }

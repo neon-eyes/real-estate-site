@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 @import 'config';
 @import 'navbar';
+@import 'hero';
 
 body {
     background-color: #777; //temp -> f5f5f5
@@ -13,5 +14,13 @@ ul {
 a {
     text-decoration: none;
     color: $bright-color;
-    font-family: 'DM Sans';
+    font-family: 'DM Sans', Tahoma;
+}
+
+h1 {
+    font-family: 'DM Sans', Tahoma;
+}
+
+p {
+    font-family: 'DM Sans', Tahoma;
 }

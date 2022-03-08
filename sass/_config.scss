@@ -11,3 +11,7 @@ $dark-color: #000;
     overflow-x: hidden;
     box-sizing: border-box;
 }
+
+@mixin transition-ease {
+    transition: all 0.2s ease-in-out;
+}

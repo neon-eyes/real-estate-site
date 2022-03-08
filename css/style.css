@@ -18,12 +18,15 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 10%;
+  padding: 35px 10%;
+  position: relative;
+  z-index: 10;
 }
 
 header .logo {
   cursor: pointer;
   margin-right: auto;
+  height: 50px;
 }
 
 header .nav-items {
@@ -33,6 +36,87 @@ header .nav-items {
 header .nav-items li {
   display: inline-block;
   padding: 0 50px;
+  height: 46px;
+  padding-top: 12px;
+}
+
+header .nav-items li.current {
+  font-size: 1.1rem;
+  border-bottom: 3px solid #ffac12;
+}
+
+header .nav-items li:nth-child(4) {
+  margin-right: 10px;
+}
+
+header .nav-items li:not(:last-child):hover {
+  border-bottom: 3px solid #ffac12;
+}
+
+header .nav-items li:last-child {
+  background: #ffac12;
+  height: 46px;
+  width: 230px;
+  border-top-right-radius: 18px;
+}
+
+header .nav-items li:last-child a {
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+header .nav-items li:last-child a i {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+header .nav-items li:last-child:hover {
+  cursor: pointer;
+  background: #f8a100;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+header .nav-items li:last-child:hover a {
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+header .nav-items li:last-child:hover a i {
+  color: #050505;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#hero img {
+  width: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+}
+
+#hero .brand-text-container {
+  z-index: 10;
+  position: relative;
+  color: #fff;
+  width: 30%;
+  margin: auto;
+}
+
+#hero .brand-text-container .brand-text h1 {
+  font-size: 80px;
+}
+
+#hero .brand-text-container .brand-text p {
+  width: 75%;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
 }
 
 body {
@@ -46,6 +130,14 @@ ul {
 a {
   text-decoration: none;
   color: #fff;
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', Tahoma;
+}
+
+h1 {
+  font-family: 'DM Sans', Tahoma;
+}
+
+p {
+  font-family: 'DM Sans', Tahoma;
 }
 /*# sourceMappingURL=style.css.map */
